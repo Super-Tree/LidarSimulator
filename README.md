@@ -27,20 +27,22 @@
 lidar.DebugFlag，若要继续增加功能接口，则需要修改carla server中的*LidarDescription.cpp*及相应.h文件。修改完成后要在pthon cilent中修改sensor类，添加新接口($Project/pythonclient/carla/sensor.py)
 
 # LidarSimulator机制
-+   GetWorld()->LineTraceSingleByChannel()函数检查某一线雷达以某个角度射出是否会有障碍物
++ 函数检查某一线雷达以某个角度射出是否会有障碍物
+   ```c++
+    GetWorld()->LineTraceSingleByChannel()
+    ```
+
 
 + 这两个for循环完成了整帧点云的生成
-
-`for(auto Channel = 0u; Channel < ChannelCount; ++Channel)
-
-  {
-
-    for(auto i = 0u; i < PointsToScanWithOneLaser; ++i)
-    {
-      ;
-    }
-
-  }`
+```c++
+      for(auto Channel = 0u; Channel < ChannelCount; ++Channel)
+      {
+        for(auto i = 0u; i < PointsToScanWithOneLaser; ++i)
+        {
+          ;
+        }
+      }
+```
 
  # 建议
  + 看一遍Carla官网的文档，主要看前半部分
