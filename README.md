@@ -47,7 +47,7 @@ lidar.DebugFlag，若要继续增加功能接口，则需要修改carla server�
  # 建议
  + 看一遍Carla官网的文档，主要看前半部分
  + 仔细分析Lidar.cpp，也就是仿真器如何生成点云
- 
+ ![all-lidar](https://github.com/Super-Tree/LidarSimulator/blob/master/pics/all-lidar.png)
  ![Editor](https://github.com/Super-Tree/LidarSimulator/blob/master/pics/UE4_EDITOR.png)
  ![p3](https://github.com/Super-Tree/LidarSimulator/blob/master/pics/P3.png)
  ![mems](https://github.com/Super-Tree/LidarSimulator/blob/master/pics/mems.png)
